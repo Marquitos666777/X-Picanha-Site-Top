@@ -1,0 +1,174 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffc107;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url("../img/hero.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.hero-box h1 {
+  font-size: 48px;
+  color: #d32f2f;
+  margin-bottom: 15px;
+}
+
+.hero-box p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  background-color: #d32f2f;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffc107;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* DESTAQUES */
+.destaques {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* WHATSAPP FIXO */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 15px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+.footer {
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px){
+  .destaques {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-box h1 {
+    font-size: 36px;
+  }
+
+  .hero-box p {
+    font-size: 18px;
+  }
+}
